@@ -38,6 +38,7 @@
       Speak commands like:
 
       "Add milk" ,"Remove bread" ,"Show my list"
+      
 🔮 Future Enhancements
 
    🛍️ Integration with e-commerce APIs (Amazon, Flipkart, etc.)
@@ -50,4 +51,4 @@
 
 🤝 Contributing
 
-  Contributions are welcome! Please fork the repo and submit a pull request.
+   Contributions are welcome! Please fork the repo and submit a pull request.
