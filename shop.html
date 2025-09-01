@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopTalk - Interactive Categories</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+<h1>ShopTalk - Interactive Categories</h1>
+<div id="voice-section">
+  <button id="start-btn">🎤 Start Voice Input (English + हिंदी)</button>
+  <p id="recognized-text">Speak your command...</p>
+</div>
+
+<div class="categories-grid">
+  <!-- Fruits -->
+  <div class="category-card" data-category="fruits">
+    <img src="https://img.freepik.com/premium-photo/healthy-tasty-fruits-vegetables_135427-4546.jpg" alt="Fruits">
+    <h2>Fruits</h2>
+    <ul class="shopping-list" id="fruits-list"></ul>
+  </div>
+
+  <!-- Vegetables -->
+  <div class="category-card" data-category="vegetables">
+    <img src="https://wallpapers.com/images/featured/vegetables-pictures-qs8trfk65nvldcyr.jpg" alt="Vegetables">
+    <h2>Vegetables</h2>
+    <ul class="shopping-list" id="vegetables-list"></ul>
+  </div>
+
+  <!-- Dairy -->
+  <div class="category-card" data-category="dairy">
+    <img src="https://w0.peakpx.com/wallpaper/226/995/HD-wallpaper-dairy-products-delicious-food-fruit-grape-cheese-spice-milk-garlic-vegetables-cream.jpg" alt="Dairy">
+    <h2>Dairy</h2>
+    <ul class="shopping-list" id="dairy-list"></ul>
+  </div>
+
+  <!-- Snacks -->
+  <div class="category-card" data-category="snacks">
+    <img src="https://assets.aboutamazon.com/dims4/default/fbdacc5/2147483647/strip/true/crop/1280x720+0+0/resize/1280x720!/quality/90/?url=https://amazon-blogs-brightspot.s3.amazonaws.com/ea/f8/b0d820644b528ea79e01781a32eb/must-try-indulgent-snacks.jpg" alt="Snacks">
+    <h2>Snacks</h2>
+    <ul class="shopping-list" id="snacks-list"></ul>
+  </div>
+
+  <!-- Beverages -->
+  <div class="category-card" data-category="beverages">
+    <img src="https://w0.peakpx.com/wallpaper/286/242/HD-wallpaper-food-cocktail-drink.jpg" alt="Beverages">
+    <h2>Beverages</h2>
+    <ul class="shopping-list" id="beverages-list"></ul>
+  </div>
+
+  <!-- Household -->
+  <div class="category-card" data-category="household">
+    <img src="https://www.shutterstock.com/image-photo/household-items-goods-collected-heap-260nw-747391993.jpg" alt="Household">
+    <h2>Household</h2>
+    <ul class="shopping-list" id="household-list"></ul>
+  </div>
+</div>
+
+<!-- Shopping list display -->
+<div id="shopping-list-display">
+  <h3>🛒 Your Shopping List</h3>
+  <div id="shopping-items"></div>
+</div>
+
+<!-- Activity Log -->
+<div id="activity-log">
+  <h3>📝 Activity Log</h3>
+  <div id="log-messages"></div>
+</div>
+<button id="logoutBtn">Logout</button>
+<script src="js/shop.js"></script>
+</body>
+</html>

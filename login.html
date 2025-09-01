@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopTalk - Sign Up / Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-header">ShopTalk Account</div>
+    
+    <div class="toggle-btns">
+      <button id="loginBtn" class="active">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+    <form id="loginForm" class="active">
+      <div class="input-group">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <div id="loginEmailFeedback" class="feedback"></div>
+      </div>
+      <div class="input-group">
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <span class="toggle-password" onclick="togglePassword('loginPassword', this)">👁️</span>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="form-footer">
+        <span>Don't have an account? <a href="#" id="switchToSignUp">Sign Up</a></span>
+      </div>
+    </form>
+    <form id="signupForm">
+      <input type="text" placeholder="Full Name" required>
+
+      <div class="input-group">
+        <input type="email" id="signupEmail" placeholder="Email" required>
+        <div id="emailFeedback" class="feedback"></div>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Password" required>
+        <span class="toggle-password" onclick="togglePassword('password', this)">👁️</span>
+      </div>
+      <div id="strengthMessage" class="feedback"></div>
+
+      <div class="input-group">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <span class="toggle-password" onclick="togglePassword('confirmPassword', this)">👁️</span>
+      </div>
+      <div id="matchMessage" class="feedback"></div>
+
+      <button type="submit" class="btn">Sign Up</button>
+      <div class="form-footer">
+        <span>Already have an account? <a href="#" id="switchToLogin">Login</a></span>
+      </div>
+    </form>
+  <div class="back-home">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  <script src="js/login.js"></script>
+</body>
+</html>
